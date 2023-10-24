@@ -44,6 +44,11 @@ This is a Node.js backend for a parcel tracking application. It provides two mai
    - `POST /Generate_Token`: Generate a JWT token by providing a JSON object with `login` and `password` fields in the request body.
 
    - `GET /Tracking_Parcel`: Retrieve parcel information by providing the `Tracking_number` as a query parameter.
+   
+
+https://github.com/k-pineda/Bringer_Test/assets/128410226/c0e85d3a-bd99-4d16-91ca-0c10c8d7361d
+
+
 
 4. **Dependencies**: The project uses the following dependencies:
    - `express` for the web server.
