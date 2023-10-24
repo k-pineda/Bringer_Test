@@ -1,16 +1,17 @@
 import React from 'react';
-import './App.css';
-import Routes from './Routes';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import TrackingView from './components/TrackingView';
+import LoginView from './components/LoginView';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Parcel Tracking App</h1>
-      </header>
-      <Routes />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<TrackingView />} />
+        <Route path="/login" element={<LoginView />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -1,15 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import TrackingView from './TrackingView';
-import LoginView from './LoginView';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import TrackingView from './components/TrackingView';
+import LoginView from './components/LoginView';
 
 const Routes = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact component={TrackingView} />
-        <Route path="/login" exact component={LoginView} />
-      </Switch>
+      <Route path="/" exact component={TrackingView} />
+      <Route path="/login" exact component={LoginView} />
     </Router>
   );
 };
